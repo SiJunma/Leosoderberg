@@ -1,0 +1,111 @@
+extends ../layout/layout.pug
+
+block nav 
+  nav.nav.nav_home
+    include ../includes/nav.pug
+
+block header
+  header.header
+    .header__bg
+      img(src="img/header-bg-image.jpg", alt="Background")
+    .container          
+      .header__wrapper 
+        h1.title Lorem ipsum dolor sit amet
+        .desk 
+          p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        a(href="http://").btn.btn_white Läs mer
+
+block content
+  section.trigger-cards 
+    .container 
+      h2.title ETT FÖRETAG MED HELHETSLÖSNINGAR FÖR ALLA BEHOV
+
+      ul.trigger-cards__list 
+        li 
+          .trigger-cards__item 
+            .trigger-cards__icon 
+              img(src="img/icon1.png", alt="Containrar")
+            .trigger-cards__title Containrar
+            .trigger-cards__desc
+              p Vi har ett stort sortiment av olika typer av containerflak både för liftdumpers och lastväxlare, både öppna och stängda samt låsbara för att passa ert behov.
+
+        li 
+          .trigger-cards__item 
+            .trigger-cards__icon 
+              img(src="img/icon2.png", alt="Leosäcken")
+            .trigger-cards__title Leosäcken
+            .trigger-cards__desc
+              p Leosäcken är en byggsäck, avfallssäck i bra kvalitet. Säcken finns i tre olika storlekar och för olika material. Ni fyller vi hämtar. Vi leverera även säckar med material i.
+
+        li 
+          .trigger-cards__item 
+            .trigger-cards__icon 
+              img(src="img/icon3.png", alt="Övriga tjänster")
+            .trigger-cards__title Övriga tjänster
+            .trigger-cards__desc
+              p Vi har olika typer av fordon från stora till små, liftdumpers, lastväxlare och kranbilar. Vi har alltid en bil som passar till just ditt uppdrag.
+
+        li 
+          .trigger-cards__item 
+            .trigger-cards__icon 
+              img(src="img/icon4.png", alt="Övriga tjänster")
+            .trigger-cards__title Kärl
+            .trigger-cards__desc
+              p Återvinningskärl lämpliga för de flesta typer av avfall. Kärlen finns i tre olika storlekar. Ni fyller vi hämtar.
+
+  section.contact-us
+    .container 
+      h2.title Kontkta oss
+
+      .contact-us__wrapper
+        ul.contact-us__addresses
+          li 
+            .contact-us__addresses-item 
+              h4.contact-us__addresses-title Besöksadress
+              .contact-us__addresses-text 
+                p Bisslingevägen Hus 4 192 77 Sollentuna
+
+          li 
+            .contact-us__addresses-item 
+              h4.contact-us__addresses-title Postadress
+              .contact-us__addresses-text 
+                p Grana 51 186 92 Vallentuna
+
+          li 
+            .contact-us__addresses-item 
+              h4.contact-us__addresses-title Kontor
+              .contact-us__addresses-text 
+                p 
+                  | Telefon: 
+                  a(href="tel:08-754 48 68") 08-754 48 68  
+                p  
+                  | E-post: 
+                  a(href="mailto:info@leosoderberg.se") info@leosoderberg.se
+
+          li 
+            .contact-us__addresses-item 
+              h4.contact-us__addresses-title Ordermottagning
+              .contact-us__addresses-text 
+                p 
+                  | Telefon: 
+                  a(href="tel:08-754 48 68") 08-754 48 68  
+                p  
+                  | E-post: 
+                  a(href="mailto:order@leosoderberg.se") order@leosoderberg.se
+
+        .contact-us__actions
+          form.contact-us__form(action="") 
+            label.contact-us__input-inner
+              p: input(type="email" name="email" placeholder="Your email").input
+              button(type="submit").btn Skicka
+
+          .contact-us__map 
+            img(src="img/placeholder-map.jpg", alt="Placeholder")
+
+block scripts
+  script(src="js/script.js")
+
+  
+ 
+
+

@@ -1,0 +1,30 @@
+.container
+  .nav__wrapper 
+    .nav__mobile 
+      button(type="button", aria-label="Menu").burger-menu#burgerBtn
+        span 
+        span 
+        span
+
+    a.logo-brand(href="index.html" aria-label="Home")
+      img(src="img/logo-brand.png", alt="Logo") 
+
+    ul.nav__menu#mobileMenu
+      li.current: a(href="index.html") Hem
+      li: a(href="about-us.html") Om oss
+      li: a(href="services.html") Våra tjänster
+      li: a(href="order.html") Beställ
+      li: a(href="contact-us.html") Kontkta oss
+
+    .nav__search
+      button(type="button", aria-label="Sök").search-btn.js-search-btn 
+        | Sök
+        img(src="img/icon-search.svg", alt="Search button")
+
+      form.search-content.js-search-content 
+        input(type="text", placeholder="Sök", name="search").search-input
+        button(type="submit", aria-hidden="true", aria-label="Submit").search-submit Submit
+
+
+
+      

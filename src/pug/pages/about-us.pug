@@ -1,0 +1,75 @@
+extends ../layout/layout.pug
+
+block nav 
+  nav.nav
+    include ../includes/nav.pug
+
+block header
+  header.header.header_regular
+    .container          
+      .header__wrapper 
+        h2.title OM OSS
+        .desk 
+          p ETT FÖRETAG MED HELHETSLÖSNINGAR FÖR ALLA BEHOV
+
+block content
+  section.subheader-half  
+    .container 
+      .section-half__wrapper
+        .section-half__content 
+          p Över 40-års erfarenhet och gedigen kunskap inom branschen. Företaget grundades år 1976 av Leo Söderberg, och ombildades 2010 till ett aktiebolag. Företaget drivs än idag av familjemedlemmar och har ca 25 anställda.
+        .section-half__img 
+          img(src="img/page-img1.jpg" alt="Writing" height="320")
+
+  section.team-cards 
+    .container 
+      .team-cards__wrapper 
+        .team-cards__item 
+          .team-cards__item-img: img(src="img/placeholder-av1.png" alt="Photo")
+          h4.team-cards__item-title Daniel Kiz
+          span.team-cards__item-subtitle Lorem ipsum dolor sit amet
+          .team-cards__item-desc
+            p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        .team-cards__item 
+          .team-cards__item-img: img(src="img/placeholder-av2.png" alt="Photo")
+          h4.team-cards__item-title Jane Austen
+          span.team-cards__item-subtitle Sit tempor porta arcu
+          .team-cards__item-desc
+            p Facilisi eu amet condimentum risus morbi. Neque laoreet pharetra dapibus quis et semper sed. Eu mattis id arcu.
+        .team-cards__item 
+          .team-cards__item-img: img(src="img/placeholder-av1.png" alt="Photo")
+          h4.team-cards__item-title Daniel Kiz
+          span.team-cards__item-subtitle Dui egestas purus fusce
+          .team-cards__item-desc
+            p Platea in id facilisi eget et. Elementum amet dictumst posuere lorem et. Varius bibendum semper amet non amet.
+
+  section.about-us 
+    .container 
+      h2.title Övriga tjänster
+
+    section.section-half
+      .container 
+        .section-half__wrapper
+          .section-half__img 
+            img(src="img/page-img2.jpg" alt="Driving" height="460")
+
+          .section-half__content 
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+    section.section-half
+      .container 
+        .section-half__wrapper
+          .section-half__content 
+            p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          .section-half__img 
+            img(src="img/page-img3.jpg" alt="Driving" height="460")
+
+
+
+block scripts
+  script(src="js/script.js")
+
+
+
+
+

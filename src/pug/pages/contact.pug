@@ -1,0 +1,82 @@
+extends ../layout/layout.pug
+
+block nav 
+  nav.nav
+    include ../includes/nav.pug
+
+block content
+  section.contact-header 
+    .container 
+      h2.title Kontakta Oss
+
+  section.contact 
+    .container 
+      .contact__wrapper 
+        .contact__actions
+          form.contact__form(action="") 
+
+            label.contact__input
+              span Ditt namn (obligatorisk)
+              p: input(type="text" name="name" placeholder="Namn").input
+
+            label.contact__input
+              span Din epost (obligatorisk)
+              p: input(type="email" name="email" placeholder="Epost").input
+
+            label.contact__input
+              span Ditt meddelande
+              p: textarea(name="msg" placeholder="Meddelande" cols="30" rows="7").input.input_textarea
+
+            button(type="submit").btn Skicka
+
+        .contact__map 
+          img(src="img/placeholder-map.jpg" alt="Placeholder")
+
+  section.contact-addresses   
+    .container 
+      h3.title Entreprenad Leo Söderberg AB
+
+      ul.addresses-list
+        li 
+          .addresses-list__item 
+            h4.addresses-list__title Besöksadress
+            .addresses-list__text 
+              p Bisslingevägen Hus&nbsp;4 <br>192 77 Sollentuna
+
+        li 
+          .addresses-list__item 
+            h4.addresses-list__title Postadress
+            .addresses-list__text 
+              p Grana&nbsp;51 <br>186 92 Vallentuna
+
+        li 
+          .addresses-list__item 
+            h4.addresses-list__title Kontor
+            .addresses-list__text 
+              p 
+                | Telefon: 
+                a(href="tel:08-754 48 68") 08-754 48 68  
+              p  
+                | E-post: 
+                a(href="mailto:info@leosoderberg.se") info@leosoderberg.se
+
+        li 
+          .addresses-list__item 
+            h4.addresses-list__title Ordermottagning
+            .addresses-list__text 
+              p 
+                | Telefon: 
+                a(href="tel:08-754 48 68") 08-754 48 68  
+              p  
+                | E-post: 
+                a(href="mailto:order@leosoderberg.se") order@leosoderberg.se
+
+
+
+block scripts
+  script(src="js/script.js")
+
+
+
+
+

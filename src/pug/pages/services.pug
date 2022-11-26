@@ -1,0 +1,54 @@
+extends ../layout/layout.pug
+
+block nav 
+  nav.nav
+    include ../includes/nav.pug
+
+block content
+  section.trigger-cards.services 
+    .container 
+      h2.title VÅRA TJÄNSTER
+      .desc 
+        p ETT FÖRETAG MED HELHETSLÖSNINGAR FÖR ALLA BEHOV
+
+      ul.trigger-cards__list 
+        li 
+          .trigger-cards__item 
+            .trigger-cards__icon 
+              img(src="img/icon1.png" alt="Containrar")
+            .trigger-cards__title Containrar
+            .trigger-cards__desc
+              p Vi har ett stort sortiment av olika typer av containerflak både för liftdumpers och lastväxlare, både öppna och stängda samt låsbara för att passa ert behov.
+
+        li 
+          .trigger-cards__item 
+            .trigger-cards__icon 
+              img(src="img/icon2.png" alt="Leosäcken")
+            .trigger-cards__title Leosäcken
+            .trigger-cards__desc
+              p Leosäcken är en byggsäck, avfallssäck i bra kvalitet. Säcken finns i tre olika storlekar och för olika material. Ni fyller vi hämtar. Vi leverera även säckar med material i.
+
+        li 
+          .trigger-cards__item 
+            .trigger-cards__icon 
+              img(src="img/icon3.png" alt="Övriga tjänster")
+            .trigger-cards__title Övriga tjänster
+            .trigger-cards__desc
+              p Vi har olika typer av fordon från stora till små, liftdumpers, lastväxlare och kranbilar. Vi har alltid en bil som passar till just ditt uppdrag.
+
+        li 
+          .trigger-cards__item 
+            .trigger-cards__icon 
+              img(src="img/icon4.png" alt="Övriga tjänster")
+            .trigger-cards__title Kärl
+            .trigger-cards__desc
+              p Återvinningskärl lämpliga för de flesta typer av avfall. Kärlen finns i tre olika storlekar. Ni fyller vi hämtar.
+
+
+block scripts
+  script(src="js/script.js")
+
+
+
+
+

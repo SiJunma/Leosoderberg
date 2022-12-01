@@ -662,7 +662,8 @@ h6 {
       @include column-gap(30px);
     }
 
-    .current {
+    .current,
+    .current-menu-item {
       font-weight: 700;
 
       a:hover {
